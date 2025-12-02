@@ -9,12 +9,6 @@ Date : 02/12/2025
 - Développeur créa : Rayan 
 - Hébergeur : David 
 
-##  Classes CSS à utiliser 
-- `site-header`
-- `hero`
-- `photo-card`
-- `grid-gallery`
-
   
 # Instructions 
 ###  Développeur principal
@@ -32,3 +26,9 @@ Date : 02/12/2025
 - Configure un serveur local (XAMPP / MAMP / WAMP)
 - Crée la base de données
 - Héberge le site (optionnel) sur alwaysdata
+
+##  Classes CSS à utiliser 
+- `site-header`
+- `hero`
+- `photo-card`
+- `grid-gallery`

@@ -39,3 +39,29 @@ Tu dois :
 - `hero`
 - `photo-card`
 - `grid-gallery`
+
+## Plan du site 
+
+- [ ] Créer la page d’accueil (index.html)
+
+ - [ ] Créer la page concours (concours.php)
+
+- [ ] Mettre en place le formulaire d’upload
+
+- [ ] Mettre en place l’enregistrement des photos
+
+- [ ] Afficher la galerie des images
+
+- [ ] Créer le système de vote
+
+ - [ ] Protéger contre les votes multiples
+
+ - [ ] Créer le fichier CSS (styles.css)
+
+ - [ ] Créer les classes imposées par le chef
+
+ - [ ] Mettre en place la base de données
+
+ - [ ] Faire l’hébergement local
+
+- [ ] S’assurer que tout fonctionne ensemble

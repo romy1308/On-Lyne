@@ -8,3 +8,9 @@ Date : 02/12/2025
 - Développeur principal : Rayan 
 - Développeur créa : Tyrone 
 - Hébergeur : David 
+
+## 🎨 Classes CSS à utiliser 
+- `site-header`
+- `hero`
+- `photo-card`
+- `grid-gallery`

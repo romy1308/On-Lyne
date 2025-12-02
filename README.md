@@ -12,21 +12,28 @@ Date : 02/12/2025
   
 # Instructions 
 ###  Développeur principal
-- Crée la page HTML d’accueil  
-- Crée la page PHP du concours  
-- Met en place les formulaires (upload + vote)  
-- Utilise au moins 4 classes CSS définies par le chef
+Tu dois :
+- Créer la page **HTML d’accueil**
+- Créer la page **PHP du concours**
+- Intégrer les **4 classes CSS imposées**
+- Faire :
+  - Le formulaire d’upload de photos
+  - Le formulaire de vote
+  - L’enregistrement des images sur le serveur
 
 ###  Développeur Créa
-- Crée le fichier **CSS**
-- Met en forme toutes les classes imposées par le chef
-- Fournit des images d’oiseaux libres de droits
+Tu dois :
+- Créer le fichier **css/styles.css**
+- Définir toutes les classes imposées par le chef
+- Trouver des images d’oiseaux libres de droits
+- Travaux esthétiques + design
 
 ###  Hébergeur
-- Configure un serveur local (XAMPP / MAMP / WAMP)
-- Crée la base de données
-- Héberge le site (optionnel) sur alwaysdata
-
+Tu dois : 
+- Héberger le site en local (XAMPP / MAMP / WAMP)
+- Créer la base de données
+- (Si possible) créer un hébergement en ligne (Alwaysdata)
+- Tester régulièrement que tout fonctionne
 ##  Classes CSS à utiliser 
 - `site-header`
 - `hero`

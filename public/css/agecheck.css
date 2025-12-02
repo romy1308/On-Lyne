@@ -1,0 +1,168 @@
+header, footer {
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #050505, #0a0a0f);
+  color: #00ffea;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.verif {
+  z-index: 1;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background: rgba(5, 5, 5, 0.85);
+  border: 2px solid #00ffea;
+  border-radius: 12px;
+  padding: 3rem 2rem;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 0 25px #00ffea inset;
+  position: relative;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 30px auto; /* centre horizontalement + marge en bas */
+  width: 180px;
+}
+.titre {
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  color: #ffffff;
+  text-shadow: 0 0 5px #00ffea;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+button {
+  position: relative;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.2rem;
+  color: #00ffea;
+  background: transparent;
+  border: 2px solid #00ffea;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 8px #00ffea;
+  font-family: inherit;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #00ffea;
+  opacity: 0.05;
+  z-index: -1;
+  mix-blend-mode: screen;
+}
+
+button:hover {
+  animation: bigGlitch 0.4s steps(2, end) infinite;
+  background: #00ffea;
+  color: #000;
+  box-shadow: 0 0 20px #ff0048, 0 0 50px;
+  border-color: #ff0004;
+}
+
+@keyframes bigGlitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 3px);
+  }
+  40% {
+    transform: translate(3px, -5px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(5px, -3px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+#message-erreur {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 3px red;
+}
+
+small {
+  font-size: 0.85rem;
+  color: #aaa;
+  text-shadow: 0 0 3px #00ffea;
+}
+
+/* effet glitch background sur toute la page */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 255, 234, 0.02),
+    rgba(0, 255, 234, 0.02) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 0;
+  animation: scanlines 2s infinite linear;
+}
+
+@keyframes scanlines {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}

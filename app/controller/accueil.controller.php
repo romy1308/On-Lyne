@@ -11,7 +11,7 @@ require_once 'app/model/acceuil.model.php';
 function generateHomePage() {
     $data = [
         'articles'=> getAllProducts(),
-        'page_title' => "Cyb3r Heaven",
+        'page_title' => "Motte & Nature - Accueil",
         'view' => 'app/view/accueil.view.php',
         'layout' => 'app/view/common/layout.php',
     ];

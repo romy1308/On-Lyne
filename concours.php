@@ -1,4 +1,9 @@
 <?php
+// On récupère l'IP du visiteur et on la stocke dans un cookie. C'est pour les stats de visite.
+$ip = $_SERVER['REMOTE_ADDR'];
+$cookievalue = $ip;
+setcookie('user_ip', $cookievalue, time() + (86400 * 30), "/"); // 86400 = 1 jour
+
 // concours.php
 ?>
 <!DOCTYPE html>
@@ -7,6 +12,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Concours photo – Espace naturel de la Motte</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
